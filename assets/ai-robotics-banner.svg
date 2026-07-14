@@ -43,9 +43,13 @@
         0%, 100% { transform: rotate(-7deg); }
         50% { transform: rotate(7deg); }
       }
-      @keyframes claw {
-        0%, 100% { transform: rotate(5deg); }
-        50% { transform: rotate(-12deg); }
+      @keyframes clawTop {
+        0%, 100% { transform: rotate(-6deg); }
+        50% { transform: rotate(8deg); }
+      }
+      @keyframes clawBottom {
+        0%, 100% { transform: rotate(6deg); }
+        50% { transform: rotate(-8deg); }
       }
       @keyframes float {
         0%, 100% { transform: translateY(0); }
@@ -62,7 +66,8 @@
       .wire { stroke-dasharray: 8 12; animation: dash 4.8s linear infinite; }
       .scan { animation: scan 5.2s ease-in-out infinite; }
       .arm { animation: servo 4.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 265px 202px; }
-      .claw { animation: claw 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 456px 118px; }
+      .claw-top { animation: clawTop 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 446px 123px; }
+      .claw-bottom { animation: clawBottom 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 446px 135px; }
       .float { animation: float 5s ease-in-out infinite; }
       .blink { animation: blink 2.2s ease-in-out infinite; }
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
@@ -115,11 +120,17 @@
       <circle cx="278" cy="213" r="28" fill="#111827" stroke="#F59E0B" stroke-width="3"/>
       <rect x="282" y="191" width="118" height="28" rx="14" transform="rotate(-34 282 191)" fill="#1F2937" stroke="#22C55E" stroke-opacity="0.62" stroke-width="2"/>
       <circle cx="392" cy="129" r="22" fill="#111827" stroke="#38BDF8" stroke-width="3"/>
-      <g class="claw">
-        <path d="M406 118 L458 94" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
-        <path d="M407 126 L458 140" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
-        <path d="M458 94 L474 78" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
-        <path d="M458 140 L476 154" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+      <path d="M402 129 H434" stroke="#CBD5E1" stroke-width="12" stroke-linecap="round"/>
+      <rect x="428" y="116" width="26" height="26" rx="8" fill="#111827" stroke="#F59E0B" stroke-width="3"/>
+      <g>
+        <g class="claw-top">
+          <path d="M446 123 L468 98" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+          <path d="M468 98 L484 84" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g class="claw-bottom">
+          <path d="M446 135 L470 158" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+          <path d="M470 158 L486 168" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+        </g>
       </g>
     </g>
   </g>
