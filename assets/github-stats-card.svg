@@ -1,0 +1,82 @@
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub profile statistics</title>
+  <desc id="desc">Profile statistics for Ranbirkumar26 including public repositories, recent contributions, commits, and featured systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="495" y2="195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="40" y1="20" x2="455" y2="175" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      @keyframes pulse {
+        0%, 100% { opacity: .42; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.12); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -120; }
+      }
+      .title { font: 700 20px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .label { font: 600 12px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .value { font: 800 30px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font: 600 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .wire { stroke-dasharray: 8 10; animation: dash 4.5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="495" height="195" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="494" height="194" rx="15.5" stroke="url(#accent)" stroke-opacity="0.55"/>
+  <path d="M30 151 C92 112 139 168 202 126 C266 83 308 121 360 77 C403 41 442 54 470 30" class="wire" stroke="url(#accent)" stroke-width="2" opacity="0.35"/>
+
+  <g filter="url(#glow)">
+    <circle class="pulse" cx="410" cy="42" r="7" fill="#38BDF8"/>
+    <circle class="pulse" cx="438" cy="64" r="5" fill="#22C55E" style="animation-delay:.45s"/>
+    <circle class="pulse" cx="382" cy="67" r="5" fill="#8B5CF6" style="animation-delay:.9s"/>
+  </g>
+
+  <text x="24" y="34" class="title" fill="#E5E7EB">Profile Stats</text>
+  <text x="24" y="55" class="mono" fill="#94A3B8">Ranbirkumar26 mission telemetry</text>
+
+  <g transform="translate(24 76)">
+    <rect width="100" height="76" rx="12" fill="#020617" stroke="#1E293B"/>
+    <text x="16" y="32" class="value" fill="#60A5FA">15</text>
+    <text x="16" y="56" class="label" fill="#CBD5E1">public repos</text>
+  </g>
+
+  <g transform="translate(138 76)">
+    <rect width="100" height="76" rx="12" fill="#020617" stroke="#1E293B"/>
+    <text x="16" y="32" class="value" fill="#A78BFA">49</text>
+    <text x="16" y="56" class="label" fill="#CBD5E1">recent contribs</text>
+  </g>
+
+  <g transform="translate(252 76)">
+    <rect width="100" height="76" rx="12" fill="#020617" stroke="#1E293B"/>
+    <text x="16" y="32" class="value" fill="#2DD4BF">36</text>
+    <text x="16" y="56" class="label" fill="#CBD5E1">commits</text>
+  </g>
+
+  <g transform="translate(366 76)">
+    <rect width="100" height="76" rx="12" fill="#020617" stroke="#1E293B"/>
+    <text x="16" y="32" class="value" fill="#FBBF24">6</text>
+    <text x="16" y="56" class="label" fill="#CBD5E1">featured builds</text>
+  </g>
+
+  <text x="24" y="176" class="mono" fill="#38BDF8">AI/ML</text>
+  <text x="76" y="176" class="mono" fill="#475569">|</text>
+  <text x="92" y="176" class="mono" fill="#22C55E">Robotics</text>
+  <text x="166" y="176" class="mono" fill="#475569">|</text>
+  <text x="182" y="176" class="mono" fill="#F59E0B">Computer Vision</text>
+  <text x="300" y="176" class="mono" fill="#475569">|</text>
+  <text x="316" y="176" class="mono" fill="#A78BFA">RAG Systems</text>
+</svg>

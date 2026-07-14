@@ -1,0 +1,78 @@
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Top programming languages</title>
+  <desc id="desc">Top languages by code volume across public owner repositories: TypeScript, HTML, Python, CSS, JavaScript, and other languages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="495" y2="195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes scan {
+        0% { transform: translateX(-90px); opacity: 0; }
+        20%, 72% { opacity: 1; }
+        100% { transform: translateX(500px); opacity: 0; }
+      }
+      .title { font: 700 20px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .label { font: 600 13px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .pct { font: 700 12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .mono { font: 600 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .scan { animation: scan 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="495" height="195" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="494" height="194" rx="15.5" stroke="#38BDF8" stroke-opacity="0.42"/>
+  <g class="scan">
+    <rect x="0" y="0" width="86" height="195" fill="url(#scan)"/>
+  </g>
+
+  <text x="24" y="34" class="title" fill="#E5E7EB">Top Languages</text>
+  <text x="24" y="55" class="mono" fill="#94A3B8">Code volume across public systems</text>
+
+  <g transform="translate(24 74)">
+    <rect width="443" height="17" rx="8.5" fill="#020617" stroke="#1E293B"/>
+    <rect x="0" y="0" width="174" height="17" rx="8.5" fill="#3178C6"/>
+    <rect x="174" y="0" width="115" height="17" fill="#E34C26"/>
+    <rect x="289" y="0" width="101" height="17" fill="#3572A5"/>
+    <rect x="390" y="0" width="30" height="17" fill="#663399"/>
+    <rect x="420" y="0" width="17" height="17" fill="#F1E05A"/>
+    <rect x="437" y="0" width="6" height="17" rx="3" fill="#94A3B8"/>
+  </g>
+
+  <g transform="translate(28 111)">
+    <circle cx="6" cy="6" r="5" fill="#3178C6"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">TypeScript</text>
+    <text x="150" y="11" class="pct" fill="#60A5FA">39.3%</text>
+  </g>
+  <g transform="translate(28 139)">
+    <circle cx="6" cy="6" r="5" fill="#E34C26"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">HTML</text>
+    <text x="150" y="11" class="pct" fill="#FB923C">25.9%</text>
+  </g>
+  <g transform="translate(28 167)">
+    <circle cx="6" cy="6" r="5" fill="#3572A5"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">Python</text>
+    <text x="150" y="11" class="pct" fill="#93C5FD">22.7%</text>
+  </g>
+
+  <g transform="translate(270 111)">
+    <circle cx="6" cy="6" r="5" fill="#663399"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">CSS</text>
+    <text x="132" y="11" class="pct" fill="#C084FC">6.9%</text>
+  </g>
+  <g transform="translate(270 139)">
+    <circle cx="6" cy="6" r="5" fill="#F1E05A"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">JavaScript</text>
+    <text x="132" y="11" class="pct" fill="#FDE68A">3.8%</text>
+  </g>
+  <g transform="translate(270 167)">
+    <circle cx="6" cy="6" r="5" fill="#94A3B8"/>
+    <text x="20" y="11" class="label" fill="#CBD5E1">Other</text>
+    <text x="132" y="11" class="pct" fill="#CBD5E1">1.5%</text>
+  </g>
+</svg>

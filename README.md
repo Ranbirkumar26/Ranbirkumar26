@@ -87,8 +87,8 @@ I build practical intelligent systems across **RAG**, **robotics**, **computer v
 ## GitHub Telemetry
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Ranbirkumar26&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ranbirkumar26&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+  <img height="195" src="assets/github-stats-card.svg" alt="GitHub profile statistics" />
+  <img height="195" src="assets/top-languages-card.svg" alt="Top languages by code volume" />
 </p>
 
 <p align="center">
