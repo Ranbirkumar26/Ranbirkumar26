@@ -29,6 +29,12 @@ I build practical intelligent systems across **RAG**, **robotics**, **computer v
 | ML systems | Semantic caching, vector search, clustering, evaluation, and APIs |
 | Product engineering | Frontend workflows, deployment, auth, storage, and user-facing AI tools |
 
+### Skill Composition
+
+<p align="center">
+  <img src="assets/skill-composition.svg" alt="Evidence-weighted skill composition bar chart" width="100%" />
+</p>
+
 ---
 
 ## Tech Stack

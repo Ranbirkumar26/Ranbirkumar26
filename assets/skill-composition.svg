@@ -1,0 +1,103 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Skill composition bar chart</title>
+  <desc id="desc">Evidence-weighted skill levels for AI engineering, ML DL CV, software development and testing, and data science, based on public projects and resume evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.5" stop-color="#101827"/>
+      <stop offset="1" stop-color="#071B2A"/>
+    </linearGradient>
+    <linearGradient id="border" x1="80" y1="24" x2="1120" y2="436" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.35" stop-color="#22C55E"/>
+      <stop offset="0.7" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="260" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="sde" x1="260" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="ml" x1="260" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="data" x1="260" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#94A3B8" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <style>
+      @keyframes meter {
+        0%, 100% { opacity: .2; transform: translateX(-80px); }
+        50% { opacity: .75; transform: translateX(840px); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .45; }
+        50% { opacity: 1; }
+      }
+      .title { font: 800 34px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .label { font: 750 22px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .value { font: 800 24px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .mono { font: 650 15px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .small { font: 650 13px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .meter { animation: meter 6s ease-in-out infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="460" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="460" rx="28" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="458" rx="27" stroke="url(#border)" stroke-opacity="0.5" stroke-width="2"/>
+
+  <g opacity="0.45">
+    <path d="M98 338 C210 286 306 350 420 296 C548 236 638 301 760 230 C900 148 1004 190 1110 118" stroke="url(#border)" stroke-width="2" stroke-dasharray="10 14"/>
+    <circle class="pulse" cx="420" cy="296" r="6" fill="#38BDF8"/>
+    <circle class="pulse" cx="760" cy="230" r="6" fill="#22C55E" style="animation-delay:.5s"/>
+    <circle class="pulse" cx="1110" cy="118" r="6" fill="#F59E0B" style="animation-delay:1s"/>
+  </g>
+
+  <text x="64" y="70" class="title" fill="#E5E7EB">Skill Composition</text>
+  <text x="64" y="101" class="mono" fill="#94A3B8">Evidence-weighted from public builds + resume variants</text>
+
+  <g transform="translate(64 136)">
+    <text x="0" y="28" class="label" fill="#E5E7EB">Software Dev + Testing</text>
+    <rect x="300" y="5" width="760" height="34" rx="17" fill="#020617" stroke="#1E293B"/>
+    <rect x="300" y="5" width="722" height="34" rx="17" fill="url(#sde)"/>
+    <rect class="meter" x="300" y="5" width="86" height="34" rx="17" fill="#FFFFFF" opacity="0.18"/>
+    <text x="1084" y="30" class="value" fill="#86EFAC">95</text>
+    <text x="300" y="64" class="small" fill="#CBD5E1">Full-stack systems, auth, APIs, CI, testing, deployment</text>
+  </g>
+
+  <g transform="translate(64 208)">
+    <text x="0" y="28" class="label" fill="#E5E7EB">AI Engineering</text>
+    <rect x="300" y="5" width="760" height="34" rx="17" fill="#020617" stroke="#1E293B"/>
+    <rect x="300" y="5" width="714" height="34" rx="17" fill="url(#ai)"/>
+    <rect class="meter" x="300" y="5" width="86" height="34" rx="17" fill="#FFFFFF" opacity="0.18" style="animation-delay:.35s"/>
+    <text x="1084" y="30" class="value" fill="#7DD3FC">94</text>
+    <text x="300" y="64" class="small" fill="#CBD5E1">RAG, agents, LLM tools, semantic search, grounded answers</text>
+  </g>
+
+  <g transform="translate(64 280)">
+    <text x="0" y="28" class="label" fill="#E5E7EB">ML + DL + CV</text>
+    <rect x="300" y="5" width="760" height="34" rx="17" fill="#020617" stroke="#1E293B"/>
+    <rect x="300" y="5" width="692" height="34" rx="17" fill="url(#ml)"/>
+    <rect class="meter" x="300" y="5" width="86" height="34" rx="17" fill="#FFFFFF" opacity="0.18" style="animation-delay:.7s"/>
+    <text x="1084" y="30" class="value" fill="#FCD34D">91</text>
+    <text x="300" y="64" class="small" fill="#CBD5E1">YOLO, ResNet, Grad-CAM, few-shot learning, edge inference</text>
+  </g>
+
+  <g transform="translate(64 352)">
+    <text x="0" y="28" class="label" fill="#E5E7EB">Data Science</text>
+    <rect x="300" y="5" width="760" height="34" rx="17" fill="#020617" stroke="#1E293B"/>
+    <rect x="300" y="5" width="669" height="34" rx="17" fill="url(#data)"/>
+    <rect class="meter" x="300" y="5" width="86" height="34" rx="17" fill="#FFFFFF" opacity="0.18" style="animation-delay:1.05s"/>
+    <text x="1084" y="30" class="value" fill="#F0ABFC">88</text>
+    <text x="300" y="64" class="small" fill="#CBD5E1">Analytics, feature pipelines, SQL, clustering, dashboards</text>
+  </g>
+</svg>
