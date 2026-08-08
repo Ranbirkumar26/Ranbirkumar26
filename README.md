@@ -77,6 +77,19 @@ I build practical intelligent systems across **RAG**, **robotics**, **computer v
 
 ---
 
+## Certifications
+
+| Certification | Issuer | Verification |
+|---|---|---|
+| Network Support and Security | Cisco Networking Academy, April 2025 | [View certificate](https://ranbirkumar26.github.io/assets/certs/cisco-network-support-and-security.pdf) |
+| NetAcad Certificate 76222e88 | Cisco Networking Academy, verified issuance | [View certificate](https://www.netacad.com/certificates/?issuanceId=76222e88-ce87-4262-9548-f1810e7c4fca) |
+| NetAcad Certificate a98ea392 | Cisco Networking Academy, verified issuance | [View certificate](https://www.netacad.com/certificates/?issuanceId=a98ea392-e4c6-42e9-9e97-95486411a4a3) |
+| NetAcad Certificate 382370b7 | Cisco Networking Academy, verified issuance | [View certificate](https://www.netacad.com/certificates/?issuanceId=382370b7-87a6-4075-a4c1-a7ce222be880) |
+| Getting Started with Artificial Intelligence | IBM SkillsBuild, Credly verified | [View badge](https://www.credly.com/badges/b5906f0c-cf47-43d6-b7a2-404c2764666c) |
+| Journey to Cloud: Envisioning Your Solution | IBM SkillsBuild, Credly verified | [View badge](https://www.credly.com/badges/99224504-b9c8-48ed-8c29-57252312a6da) |
+
+---
+
 ## Featured Systems
 
 | Project | Stack | Why It Matters |
